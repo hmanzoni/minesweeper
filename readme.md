@@ -1,6 +1,6 @@
 # Minesweeper Game :rocket:
 
-I create this simple game with the scope of get some practice with **Python** following the OOP principles :smiley:. I will acept any advice how to improve it and get more knowledge on OOP.
+I created this simple game with the aim of practicing my skills with **Python**, while following the OOP principles :smiley:. I welcome any advice on how to improve it and gain more knowledge on OOP.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ python main.py
 After run the command a windows will be open, now you can play, enjoy it!
 
 ## Credits
-I build all the project following the course on youtube called -> [Python Game Development Project Using OOP – Minesweeper Tutorial (w/ Tkinter)](https://youtu.be/OqbGRZx4xUc) on the channel of [freecodecamp](https://www.freecodecamp.org/). 
+I built the entire project by following the course on YouTube called -> [Python Game Development Project Using OOP – Minesweeper Tutorial (w/ Tkinter)](https://youtu.be/OqbGRZx4xUc) on the channel of [freecodecamp](https://www.freecodecamp.org/). 
 A special thanks goes to [JimSC](https://github.com/jimdevops19) :smiley:.
 
 ## Contributing
