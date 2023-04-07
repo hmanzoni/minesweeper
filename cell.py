@@ -1,4 +1,6 @@
 from tkinter import Button, Label
+import ctypes
+import sys
 import random
 import settings
 
@@ -57,9 +59,9 @@ class Cell:
             self.is_mine_candidate = False
 
     def show_mine(self):
-        # A logic to interrupt the game 
-        # and display a msg to the player
         self.cell_btn_object.configure(bg='red')
+        ctypes.windll.user32.MessageBoxW(0, 'You click on a mine', 'Game Over', 0)
+        sys.exit()
 
     def get_cell_by_axis(self, x, y):
         # Return a cell object based on the value of x,y
@@ -100,6 +102,9 @@ class Cell:
             # Replace the text of cell count label with the newer count
             if Cell.cell_count_label_object:
                 Cell.cell_count_label_object.configure(text=f'Cells left: {Cell.cell_count}')
+            # If this was a mine candidate, the for safety, we should
+            # configure the background color to SystemButtonFace
+            self.cell_btn_object.configure(bg='SystemButtonFace')
 
         # Mark the cell as opened (Use is as the last line of this method)
         self.is_opened = True
